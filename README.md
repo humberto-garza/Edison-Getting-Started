@@ -151,6 +151,7 @@ ifconfig
 
 > ![alt tag](Diagrams/31.PNG) <br/>
 ----------
+
 > Instead of using JuiceSSH you can just using Putty in Windows
 
 9. You can as well access the archives with a GUI in Android. Donwload **File Explorer** App
