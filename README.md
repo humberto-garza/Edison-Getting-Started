@@ -109,3 +109,53 @@ First of all, you will need to get some drivers installed so you don't have any 
 3. You Should now have access to the Files with GUI<br/>
 > ![alt tag](Diagrams/29.PNG) <br/>
 ----------
+
+#### Android - Wifi SSH 
+1. Download the App JuiceSSH
+2. Configure The Edison Name and Password. I suggest you only change to password to **password**
+```
+configure_edison --setup
+```
+
+3. Start AP Mode. The Second command is to stop that service
+```
+systemctl start hostapd
+systemctl stop hostapd
+```
+> Because the Broadcom module does not support STA/AP concurrently, hostapd and wpa_supplicant
+cannot run simultaneously. Use the following commands to start/stop wpa_supplicant manually: 
+```
+systemctl start wpa_supplicant
+systemctl stop wpa_supplicant
+```
+
+4. Scan with yout Phone (or computer) for WIFI
+5. It should be called Something like EDISON:XX:XX
+6. The password is the same one as assigned in step **2**
+> In case you want to know the default wifi password before you set it up you must use your Edison Serial number, and it should be something like this: **FZED443D01RNZ501**. This can be found in the Box or:
+```
+cat /etc/hostapd/hostapd.conf | grep wpa_passphrase
+``
+7. Now you need to know the Edison IP to access by SSH
+```
+ifconfig
+```
+
+> ![alt tag](Diagrams/30.PNG) <br/>
+----------
+
+8. Open JuiceSSH and connect like this:
+> ![alt tag](Diagrams/31.PNG) <br/>
+----------
+> ![alt tag](Diagrams/32.PNG) <br/>
+----------
+> ![alt tag](Diagrams/33.PNG) <br/>
+----------
+> ![alt tag](Diagrams/34.PNG) <br/>
+----------
+> ![alt tag](Diagrams/35.PNG) <br/>
+----------
+> ![alt tag](Diagrams/36.PNG) <br/>
+----------
+> ![alt tag](Diagrams/37.PNG) <br/>
+----------
