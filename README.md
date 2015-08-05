@@ -136,7 +136,7 @@ systemctl stop wpa_supplicant
 > In case you want to know the default wifi password before you set it up you must use your Edison Serial number, and it should be something like this: **FZED443D01RNZ501**. This can be found in the Box or:
 ```
 cat /etc/hostapd/hostapd.conf | grep wpa_passphrase
-``
+```
 
 7. Now you need to know the Edison IP to access by SSH
 ```
