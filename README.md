@@ -110,7 +110,7 @@ First of all, you will need to get some drivers installed so you don't have any 
 > ![alt tag](Diagrams/29.PNG) <br/>
 ----------
 
-#### Android - Wifi SSH 
+#### Android/Windows - Wifi SSH 
 1. Download the App JuiceSSH
 2. Configure The Edison Name and Password. I suggest you only change to password to **password**
 ```
@@ -151,3 +151,5 @@ ifconfig
 
 > ![alt tag](Diagrams/31.PNG) <br/>
 ----------
+
+9. Instad of using JuiceSSH you can just using Putty in Windows
