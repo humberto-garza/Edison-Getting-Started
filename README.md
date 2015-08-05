@@ -6,7 +6,7 @@ First of all, you will need to get some drivers installed so you don't have any 
 
 #### SETUP
 1. Go to [This](https://software.intel.com/en-us/iot/hardware/edison/downloads) page and get the **[Driver Software](http://downloadmirror.intel.com/24909/eng/IntelEdisonDriverSetup1.2.1.exe)**. It is the file: **IntelEdisonDriverSetup1.2.1.exe**
-> Follow These Steps:
+> Follow These Steps:\s\s
 > ![alt tag](Diagrams/1.PNG)
 > ![alt tag](Diagrams/2.PNG)
 > ![alt tag](Diagrams/3.PNG)
