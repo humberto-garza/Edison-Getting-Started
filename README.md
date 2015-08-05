@@ -27,7 +27,7 @@ First of all, you will need to get some drivers installed so you don't have any 
 
 3. Connect Both USB Cables to The Board
 4. Open Windows **Device Manager**
-5. Under **Ports (COM % LPT)** you should see the COM of your EDISON
+5. Under **Ports (COM & LPT)** you should see the COM of your EDISON
 > If you cannot see the Proper COM as in the last picture try the following: <br/>
 > ![alt tag](Diagrams/8.PNG) <br/>
 ----------
@@ -86,11 +86,11 @@ First of all, you will need to get some drivers installed so you don't have any 
 ----------
 
 5.  Go to Putty and Select SSH Configuration using these Parameters<br/>
-> ![alt tag](Diagrams/24.PNG) <br/>
+> ![alt tag](Diagrams/25.PNG) <br/>
 ----------
 
 6.  Click YES<br/>
-> ![alt tag](Diagrams/24.PNG) <br/>
+> ![alt tag](Diagrams/26.PNG) <br/>
 ----------
 
 7. Edison login: **root** 
