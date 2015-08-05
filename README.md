@@ -96,4 +96,16 @@ First of all, you will need to get some drivers installed so you don't have any 
 7. Edison login: **root** 
 8. Now you can have access to the Linux Yocto OS
 
+#### SSH File Explorer
+1. Download [WinSCP](https://winscp.net/eng/download.php)
+2. Open WinSCP and add a New Site with these Parameters (If your Edison has no password, leave that field blank)<br/>
+> ![alt tag](Diagrams/27.PNG) <br/>
+----------
 
+3. Add This Key to WinSCP<br/>
+> ![alt tag](Diagrams/28.PNG) <br/>
+----------
+
+3. You Should now have access to the Files with GUI<br/>
+> ![alt tag](Diagrams/29.PNG) <br/>
+----------
