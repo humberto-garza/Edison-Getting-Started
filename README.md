@@ -122,6 +122,7 @@ configure_edison --setup
 systemctl start hostapd
 systemctl stop hostapd
 ```
+
 > Because the Broadcom module does not support STA/AP concurrently, hostapd and wpa_supplicant
 cannot run simultaneously. Use the following commands to start/stop wpa_supplicant manually: 
 ```
@@ -136,6 +137,7 @@ systemctl stop wpa_supplicant
 ```
 cat /etc/hostapd/hostapd.conf | grep wpa_passphrase
 ``
+
 7. Now you need to know the Edison IP to access by SSH
 ```
 ifconfig
