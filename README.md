@@ -156,6 +156,7 @@ ifconfig
 
 9. You can as well access the archives with a GUI in Android. Donwload **File Explorer** App
 10. Follow These Steps:<br/>
+
 > ![alt tag](Diagrams/32.PNG) <br/>
 ----------
 
