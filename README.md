@@ -136,7 +136,7 @@ systemctl stop wpa_supplicant
 > In case you want to know the default wifi password before you set it up you must use your Edison Serial number, and it should be something like this: **FZED443D01RNZ501**. This can be found in the Box or:
 ```
 cat /etc/hostapd/hostapd.conf | grep wpa_passphrase
-``
+```
 
 7. Now you need to know the Edison IP to access by SSH
 ```
@@ -148,16 +148,4 @@ ifconfig
 
 8. Open JuiceSSH and connect like this:
 > ![alt tag](Diagrams/31.PNG) <br/>
-----------
-> ![alt tag](Diagrams/32.PNG) <br/>
-----------
-> ![alt tag](Diagrams/33.PNG) <br/>
-----------
-> ![alt tag](Diagrams/34.PNG) <br/>
-----------
-> ![alt tag](Diagrams/35.PNG) <br/>
-----------
-> ![alt tag](Diagrams/36.PNG) <br/>
-----------
-> ![alt tag](Diagrams/37.PNG) <br/>
 ----------
