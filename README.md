@@ -65,4 +65,35 @@ First of all, you will need to get some drivers installed so you don't have any 
 3. Now you can have access to the Linux Yocto OS
 
 #### SSH Connection (RNDIS)
+1. Open Network and Sharing Center<br/>
+> ![alt tag](Diagrams/20.PNG) <br/>
+----------
+
+2. Change adapter settings<br/>
+> ![alt tag](Diagrams/21.PNG) <br/>
+----------
+
+3. If Disabled, **Enable** the RNDIS Network Adapter<br/>
+> ![alt tag](Diagrams/22.PNG) <br/>
+----------
+
+4. Go To The Adapter Properties and double click the **Internet Protocol Version 4 (TCP/IPv4)** option<br/>
+> ![alt tag](Diagrams/23.PNG) <br/>
+----------
+
+5.  Use These parameters for the **Static IPv4** Address and click OK<br/>
+> ![alt tag](Diagrams/24.PNG) <br/>
+----------
+
+5.  Go to Putty and Select SSH Configuration using these Parameters<br/>
+> ![alt tag](Diagrams/24.PNG) <br/>
+----------
+
+6.  Click YES<br/>
+> ![alt tag](Diagrams/24.PNG) <br/>
+----------
+
+7. Edison login: **root** 
+8. Now you can have access to the Linux Yocto OS
+
 
