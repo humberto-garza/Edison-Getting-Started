@@ -17,6 +17,7 @@ First of all, you will need to get some drivers installed so you don't have any 
 ----------
 > ![alt tag](Diagrams/5.PNG) <br/>
 ----------
+
 2. Download the **[CDM FTDI Driver](http://www.ftdichip.com/Drivers/CDM/CDM%20v2.10.00%20WHQL%20Certified.exe)** 
 > Follow These Steps: <br/>
 > ![alt tag](Diagrams/6.PNG) <br/>
@@ -40,6 +41,7 @@ First of all, you will need to get some drivers installed so you don't have any 
 ----------
 > ![alt tag](Diagrams/13.PNG) <br/>
 ----------
+
 6. Under **Network Adapters** you should see the Intel Edison **RNDIS** Adapter
 > If you cannot see the Proper COM as in the picture try the following: <br/>
 > ![alt tag](Diagrams/14.PNG) <br/>
