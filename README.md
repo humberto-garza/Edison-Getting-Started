@@ -14,19 +14,32 @@ First of all, you will need to get some drivers installed so you don't have any 
 > ![alt tag](Diagrams/5.PNG)
 
 2. Download the **[CDM FTDI Driver](http://www.ftdichip.com/Drivers/CDM/CDM%20v2.10.00%20WHQL%20Certified.exe)** 
-> Follow These Steps:
+> Follow These Steps: <br/>
+> ![alt tag](Diagrams/6.PNG)
+> ![alt tag](Diagrams/7.PNG)
 
 3. Connect Both USB Cables to The Board
 4. Open Windows **Device Manager**
 5. Under **Ports (COM % LPT)** you should see the COM of your EDISON
-> If you cannot see the Proper COM as in the picture try the following:
-
+> If you cannot see the Proper COM as in the picture try the following: <br/>
+> ![alt tag](Diagrams/8.PNG)
+> ![alt tag](Diagrams/9.PNG)
+> ![alt tag](Diagrams/10.PNG)
+> ![alt tag](Diagrams/11.PNG)
+> ![alt tag](Diagrams/12.PNG)
+> ![alt tag](Diagrams/13.PNG)
 6. Under **Network Adapters** you should see the Intel Edison **RNDIS** Adapter
-> If you cannot see the Proper COM as in the picture try the following:
+> If you cannot see the Proper COM as in the picture try the following: <br/>
+> ![alt tag](Diagrams/14.PNG)
+> ![alt tag](Diagrams/15.PNG)
+> ![alt tag](Diagrams/16.PNG)
+> ![alt tag](Diagrams/17.PNG)
+> ![alt tag](Diagrams/18.PNG)
 
 #### Serial Connection
 1. Open Putty, under the serial Connection Write the **COM** That was assigned to the edison FTDI adapter. We must use the **USB Serial PORT**; not the **Virtual COM Port** since this is the one that the Arduino IDE uses. The BAUD is **115200** 
->Reference:
+>Reference: <br/>
+> ![alt tag](Diagrams/19.PNG)
 
 2. Edison login: **root** 
 3. Now you can have access to the Linux Yocto OS
