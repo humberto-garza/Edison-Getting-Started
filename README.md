@@ -28,7 +28,7 @@ First of all, you will need to get some drivers installed so you don't have any 
 3. Connect Both USB Cables to The Board
 4. Open Windows **Device Manager**
 5. Under **Ports (COM % LPT)** you should see the COM of your EDISON
-> If you cannot see the Proper COM as in the picture try the following: <br/>
+> If you cannot see the Proper COM as in the last picture try the following: <br/>
 > ![alt tag](Diagrams/8.PNG) <br/>
 ----------
 > ![alt tag](Diagrams/9.PNG) <br/>
@@ -43,7 +43,7 @@ First of all, you will need to get some drivers installed so you don't have any 
 ----------
 
 6. Under **Network Adapters** you should see the Intel Edison **RNDIS** Adapter
-> If you cannot see the Proper COM as in the picture try the following: <br/>
+> If you cannot see the Proper COM as in the last picture try the following: <br/>
 > ![alt tag](Diagrams/14.PNG) <br/>
 ----------
 > ![alt tag](Diagrams/15.PNG) <br/>
