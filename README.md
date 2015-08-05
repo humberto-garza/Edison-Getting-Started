@@ -1,5 +1,5 @@
 # Edison Getting Started (Windows)
-It is important to mention that this board works without problems in a Linux Environment as well; but this tutorial focuses in Windows. 
+It is important to mention that this board works without problems in a Linux Environment as well; but this tutorial focuses in Windows.  
 
 First of all, you will need to get some drivers installed so you don't have any issues. 
 > Do this **BEFORE** you plug your board in!
