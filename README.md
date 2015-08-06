@@ -141,6 +141,7 @@ When working with the Edison, you may find convenient knowing a way to completel
 ----------
 
 #### Android/Windows - Wifi SSH 
+
 > - Download the App JuiceSSH
 > - Configure The Edison Name and Password. I suggest you only change to password to **password**
 ```
@@ -192,6 +193,11 @@ ifconfig
 
 #### Interact with Serial 2
 As you should know, the Edison's **SERIAL2** is actually the **Linux Serial terminal**; it is connected to the uUSB connector with an FTDI chip, so if you are planning in using the SERIAL2, things might get a bit complicated. I will explain how can you achieve such connection and get the right communication noise free!<br/>
+Just as a FYI, you should know how to change the BAUD of any Serial /dev/<br/>
+
+```
+stty -F /dev/ttyMFD1 [baud]
+```
 
 > - Connect both uUSB cables to your computer. <br/>
 > - Connect the Edison through COM and SSH in 2 Putty sessions<br/>
@@ -375,6 +381,16 @@ To Go even further you can explore the platform rules!<br/>
 ####Configure your MCU launching service to run scripts automatically 
 Doing this with the new Yocto Image is quite simple, all you have to do is follow these instructions this was taken from the official [Intel Edison MCU Setup guide](https://software.intel.com/en-us/node/545143):<br/>
 
+Just as a FYI, you should know how to keep the WiFi up even after reboot so it will reconnect automatically /dev/<br/>
+
+```
+systemctl start connman
+systemctl enable wpa_supplicant
+systemctl start wpa_supplicant
+#In this file you can see the WiFi configuration:
+vi /etc/wpa_supplicant/wpa_supplicant.conf 
+```
+
 > - In a serial communication session with your board, open the mcu_fw_loader.sh file using a text editor such as vi.<br/>
 
 ```
@@ -386,13 +402,6 @@ For example, the following file is configured to run **init_i2c8.sh** and **init
 
 > ![alt tag](Diagrams/51.PNG) <br/>
 ----------
-
-
-
-
-
-
-
 
 #### MCU SDK
 In order to get the MCU to work, you can follow this [guide](https://software.intel.com/en-us/node/545143)
