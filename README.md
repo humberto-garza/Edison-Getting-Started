@@ -161,14 +161,15 @@ ifconfig
 ----------
 
 #### Interact with Serial 2
-As you should know, the Edison's **SERIAL2** is actually the **Linux Serial terminal**; it is connected to the uUSB connector with a FTDI chip, so if you are planning in using the SERIAL2 things might get a bit complicated. I will explain how can you achieve such connection and get the right communication noise free!
-1. Connect both uUSB cables to your computer.
+As you should know, the Edison's **SERIAL2** is actually the **Linux Serial terminal**; it is connected to the uUSB connector with an FTDI chip, so if you are planning in using the SERIAL2, things might get a bit complicated. I will explain how can you achieve such connection and get the right communication noise free!<br/>
+
+1. Connect both uUSB cables to your computer. <br/>
 2. Connect the Edison through COM and SSH in 2 Putty sessions<br/>
 
 > ![alt tag](Diagrams/33.PNG) <br/>
 ----------
 
-3. Type This Commands in the SSH Session (it has to be in the SSH session because once the first command is executed, the terminal will be disabled and you will not be able to input the second one):
+3. Type these Commands in the SSH Session (it has to be in the SSH session because once the first command is executed, the terminal will be disabled and you will not be able to input the second one):
 ```
 systemctl stop serial-getty@ttyMFD2.service
 dmesg -n 1
