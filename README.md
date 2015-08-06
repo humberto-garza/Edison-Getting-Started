@@ -372,6 +372,27 @@ To Go even further you can explore the platform rules!<br/>
 > ![alt tag](Diagrams/50.PNG) <br/>
 ----------
 
+####Configure your MCU launching service to run scripts automatically 
+Doing this with the new Yocto Image is quite simple, all you have to do is follow these instructions this was taken from the official [Intel Edison MCU Setup guide](https://software.intel.com/en-us/node/545143):<br/>
+
+> - In a serial communication session with your board, open the mcu_fw_loader.sh file using a text editor such as vi.<br/>
+
+```
+vi /etc/intel_mcu/mcu_fw_loader.sh
+```
+
+For each script that you want to run, type /folderpath/scriptname.sh, where folderpath is the location where the script is stored and scriptname is the name of the script, as shown in the example below. Each script should be on its own line. Be sure to include any required arguments for running the script.
+For example, the following file is configured to run **init_i2c8.sh** and **init_DIG.sh**:<br/>
+
+> ![alt tag](Diagrams/51.PNG) <br/>
+----------
 
 
 
+
+
+
+
+
+#### MCU SDK
+In order to get the MCU to work, you can follow this [guide](https://software.intel.com/en-us/node/545143)
