@@ -187,3 +187,111 @@ echo Hello World > /dev/ttyMFD2
 
 > ![alt tag](Diagrams/35.PNG) <br/>
 ----------
+
+#### Intel Analytics Platform
+IoT Analytics includes resources for the collection and analysis of sensor data that the Intel® IoT Developer Kit provides without having to invest in large-scale storage and processing capacity. While it is possible to store sensor values directly on an Intel® Edison board, IoT Analytics is the preferred, convenient location for storing sensor values for safekeeping and future manipulation.<br/>
+> - Connect your Edison to Internet:<br/>
+```
+configure_edison --wifi
+```
+
+> - Make a ping to test your connection:<br/>
+> ![alt tag](Diagrams/36.PNG) <br/>
+----------
+
+There are certain commands to interact with the platform:<br/>
+> - Make sure that you hace the appropriate version >= **1.7.0**<br/>
+```
+iotkit-admin version  
+```
+
+> - If you do **not** have this version try these commands to update your toolset:<br/>
+```
+npm install -g npm
+npm install iotkit-agent
+npm install mraa
+npm update -g iotkit-agent 
+```
+
+> - First you hace to test it works<br/>
+```
+iotkit-admin test
+```
+
+> - If you are having issues with this, try these commands:<br/>
+```
+iotkit-admin reset-code
+iotkit-admin reset-components
+iotkit-admin initialize
+```
+
+When you Register your device in the Platform, it will be "belong" to the account that registered it. So if you want to register it in a new account but you did not remove it from the previous account, it will say it is not available. In order to avoid that, you can choose the ID for your device.<br/>
+
+> - Choose a new ID fot your Device in this format **XX-XX-XX-XX-XX-XX-XX**. **If you are the owner of this Edison you can skip this step**, if you are **sharing it** you may do this for good. (I recommend you split your phone number to make it fit there and make sure it cannot be repeated by other users in the world); the second command will return the ID and make sure it was accepted:<br/>
+```
+iotkit-admin set-device-id XX-XX-XX-XX-XX-XX-XX
+iotkit-admin device-id
+```
+
+> - Go to [IoT Analytics Platform](enableiot.com) and create an account:<br/>
+> ![alt tag](Diagrams/37.PNG) <br/>
+----------
+
+> - Once you did this, go to: **menu>Devices>Add a New Device**:<br/>
+> ![alt tag](Diagrams/38.PNG) <br/>
+----------
+
+> - Go to: **menu>Account>Activation Code**:<br/>
+> ![alt tag](Diagrams/39.PNG) <br/>
+----------
+
+> - Activate your Device with the Code you just got:<br/>
+```
+iotkit-admin activate [activation_code]
+```
+
+> - By Default your new account hase some sensors registered, you can check them out like this:<br/>
+```
+iotkit-admin catalog
+```
+> ![alt tag](Diagrams/40.PNG) <br/>
+----------
+
+> - For this test, we will try the temperature one:<br/>
+```
+iotkit-admin register temperature temperature.v1.0
+```
+
+> - Make sure the register was successful, you should see something like this:<br/>
+```
+iotkit-admin components
+```
+> ![alt tag](Diagrams/41.PNG) <br/>
+----------
+
+> - Set the Communication protocol to mqtt and start the service :<br/>
+```
+iotkit-admin protocol mqtt
+systemctl start iotkit-agent
+```
+
+> - Test sending sensor data to the cloud:<br/>
+```
+iotkit-admin observation temperature 40
+```
+> ![alt tag](Diagrams/42.PNG) <br/>
+----------
+
+> - Go to the Platform **menu>charts** Select your device and you should see in the graph the 40 degrees we just sent:<br/>
+> ![alt tag](Diagrams/43.PNG) <br/>
+----------
+
+
+
+
+
+
+
+
+
+
