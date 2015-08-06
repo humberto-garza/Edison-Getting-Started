@@ -262,7 +262,7 @@ iotkit-admin catalog
 > ![alt tag](Diagrams/40.PNG) <br/>
 ----------
 
-> - For this test, we will try the temperature one:<br/>
+> - For this test, we will try the temperature one and add the powerswitch as well:<br/>
 ```
 iotkit-admin register temperature temperature.v1.0
 ```
@@ -294,11 +294,53 @@ iotkit-admin observation temperature 40
 > ![alt tag](Diagrams/43.PNG) <br/>
 ----------
 
+You can go further and control your board with this platform <br/>
+> - We will test this in Arduino To Make Sure it all works, and understand the program flow. Download the [Library](https://github.com/enableiot/iotkit-samples/raw/master/arduino/IoTkit.zip) and add it to your [Intel Arduino IDE](https://software.intel.com/en-us/iot/hardware/edison/downloads)<br/>
 
+> - You should see the examples in your IDE Like this <br/>
 
+> ![alt tag](Diagrams/44.PNG) <br/>
+----------
 
+> - Register the Powerswitch and test it:<br/>
+```
+$ iotkit-admin register power powerswitch.v1.0
+$ iotkit-admin observation power 1
+```
 
+Make sure that there is no other process “listening” to the port UDP41235 or UDP41234 before you run it (kill -9 if necessary)<br/>
 
+> - Leave running the **IoTKitActuationExample.ino**<br/>
+
+> - Go to **menu>control**, select your device, select **power** component and follow these steps:<br/>
+
+> ![alt tag](Diagrams/45.PNG) <br/>
+----------
+
+> - See the message in the Arduino **serial monitor**<br/>
+
+To Go even further you can explore the platform rules!<br/>
+
+> - Go to **menu>control** and insteading all valid actions, save them as complex command <br/>
+
+> ![alt tag](Diagrams/46.PNG) <br/>
+----------
+
+> - Go to **menu>rules>Add a Rule**, The Priority will not modify the behavior of the actuation; this just helps the sorting<br/>
+
+> ![alt tag](Diagrams/47.PNG) <br/>
+----------
+
+> ![alt tag](Diagrams/48.PNG) <br/>
+----------
+
+> ![alt tag](Diagrams/49.PNG) <br/>
+----------
+
+> - When a rule's condition is met, you can see it in your dashboard. Remember you are responsible for the code that listens to the platform's notifications<br/>
+
+> ![alt tag](Diagrams/50.PNG) <br/>
+----------
 
 
 
