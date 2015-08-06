@@ -196,6 +196,7 @@ configure_edison --wifi
 ```
 
 > - Make a ping to test your connection:<br/>
+
 > ![alt tag](Diagrams/36.PNG) <br/>
 ----------
 
@@ -225,7 +226,7 @@ iotkit-admin reset-components
 iotkit-admin initialize
 ```
 
-When you Register your device in the Platform, it will be "belong" to the account that registered it. So if you want to register it in a new account but you did not remove it from the previous account, it will say it is not available. In order to avoid that, you can choose the ID for your device.<br/>
+When you Register your device in the Platform, it will "belong" to the account that registered it. So if you want to register it in a new account but you did not remove it from the previous account, it will say it is not available. In order to avoid that, you can choose the ID for your device.<br/>
 
 > - Choose a new ID fot your Device in this format **XX-XX-XX-XX-XX-XX-XX**. **If you are the owner of this Edison you can skip this step**, if you are **sharing it** you may do this for good. (I recommend you split your phone number to make it fit there and make sure it cannot be repeated by other users in the world); the second command will return the ID and make sure it was accepted:<br/>
 ```
@@ -234,14 +235,17 @@ iotkit-admin device-id
 ```
 
 > - Go to [IoT Analytics Platform](enableiot.com) and create an account:<br/>
+
 > ![alt tag](Diagrams/37.PNG) <br/>
 ----------
 
 > - Once you did this, go to: **menu>Devices>Add a New Device**:<br/>
+
 > ![alt tag](Diagrams/38.PNG) <br/>
 ----------
 
 > - Go to: **menu>Account>Activation Code**:<br/>
+
 > ![alt tag](Diagrams/39.PNG) <br/>
 ----------
 
@@ -254,6 +258,7 @@ iotkit-admin activate [activation_code]
 ```
 iotkit-admin catalog
 ```
+
 > ![alt tag](Diagrams/40.PNG) <br/>
 ----------
 
@@ -266,6 +271,7 @@ iotkit-admin register temperature temperature.v1.0
 ```
 iotkit-admin components
 ```
+
 > ![alt tag](Diagrams/41.PNG) <br/>
 ----------
 
@@ -279,10 +285,12 @@ systemctl start iotkit-agent
 ```
 iotkit-admin observation temperature 40
 ```
+
 > ![alt tag](Diagrams/42.PNG) <br/>
 ----------
 
 > - Go to the Platform **menu>charts** Select your device and you should see in the graph the 40 degrees we just sent:<br/>
+
 > ![alt tag](Diagrams/43.PNG) <br/>
 ----------
 
