@@ -152,7 +152,7 @@ ifconfig
 > ![alt tag](Diagrams/31.PNG) <br/>
 ----------
 
-> Instead of using JuiceSSH you can just using Putty in Windows
+> Instead of using JuiceSSH you can just use Putty in Windows
 
 > - You can as well access the archives with a GUI in Android. Donwload **File Explorer** App
 > - Follow These Steps:<br/>
