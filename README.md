@@ -55,6 +55,36 @@ First of all, you will need to get some drivers installed so you don't have any 
 > ![alt tag](Diagrams/18.PNG) <br/>
 ----------
 
+
+#### Flash New Image
+When working with the Edison, you may find convenient knowing a way to completely flash the Board:
+
+> - Download the [Phone Flash Tool Lite For Windows](https://01.org/android-ia/downloads/intel-phone-flash-tool-lite):<br/>
+
+> - Download [Zadig](http://zadig.akeo.ie/downloads/):<br/>
+
+> - Reboot your Computer<br/>
+
+> - Open Zadig<br/>
+
+> - **Options>List all Drivers**<br/>
+
+> - Select **RNDIS (Interface 0)** and Replace Driver to **libusbK (v3.0.7.0)**<br/>
+
+> ![alt tag](Diagrams/a.PNG) <br/>
+----------
+
+> - Download the [Latest Board Firmware Version](https://software.intel.com/en-us/iot/hardware/edison/downloads) (Release 2.1 Yocto* complete image):<br/>
+
+> - Unzip The file To any Folder with no spaces that you wish:<br/>
+
+> - CD to that folder and execute **flashall** and follow the instructions in the screen (this may take up to 15 minutes, be patient):<br/>
+
+> ![alt tag](Diagrams/b.PNG) <br/>
+----------
+
+> -When it is over, make sure you **leave it connected** for at least **2 minutes** so it reboots properly:<br/>
+
 #### Serial Connection
 > - Open Putty, under the serial Connection Write the **COM** That was assigned to the edison FTDI adapter. We must use the **USB Serial PORT**; not the **Virtual COM Port** since this is the one that the Arduino IDE uses. The BAUD is **115200** 
 >Reference: <br/>
@@ -321,7 +351,7 @@ Make sure that there is no other process “listening” to the port UDP41235 or
 
 To Go even further you can explore the platform rules!<br/>
 
-> - Go to **menu>control** and insteading all valid actions, save them as complex command <br/>
+> - Go to **menu>control** and instead of sending all valid actions, save them as complex command <br/>
 
 > ![alt tag](Diagrams/46.PNG) <br/>
 ----------
