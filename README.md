@@ -63,6 +63,12 @@ When working with the Edison, you may find convenient knowing a way to completel
 
 > - Download [Zadig](http://zadig.akeo.ie/downloads/):<br/>
 
+You must add the [dfu-util](http://dfu-util.sourceforge.net/releases/dfu-util-0.7-binaries/) directory to the path manually. Do the following:
+1. Right-click on the Computer icon and select Properties.
+2. Choose Advanced system settings in the left pane.
+3. Click Environment Variables at the bottom of the Advanced tab.
+4. Edit the Path variable in the system variables list (the lower list). Assuming that dfu-util was extracted to C:\Program Files (x86), insert a semicolon and add C:\Program Files (x86)\dfu-util-0.7-binaries\win32-mingw32 to the path.<br/>
+
 > - Reboot your Computer<br/>
 
 > - Open Zadig<br/>
