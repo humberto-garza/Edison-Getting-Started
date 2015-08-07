@@ -389,8 +389,8 @@ systemctl enable wpa_supplicant
 systemctl start wpa_supplicant
 #In this file you can see the WiFi configuration:
 vi /etc/wpa_supplicant/wpa_supplicant.conf 
-```
-
+``
+`
 > - In a serial communication session with your board, open the mcu_fw_loader.sh file using a text editor such as vi.<br/>
 
 ```
